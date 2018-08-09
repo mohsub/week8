@@ -32,6 +32,16 @@ console.log(divisbleBy21());
 
 console.log("Amount of numbers divisible by 21:",divisbleBy21().length)
 
+let numberOfDivisible = [];
+
+for( let i = 1; i <= 30; i++){
+
+    numberOfDivisible.push(divisibleFactory(i)().length)
+
+}
+
+console.log(numberOfDivisible)
+
 
 //Step 2: Continuing with data loading, processing and rendering
 
